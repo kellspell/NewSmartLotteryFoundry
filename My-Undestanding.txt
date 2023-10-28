@@ -1,0 +1,40 @@
+In this lesson I'm going to learn about how to work with ChainLink VRF contract
+which is a contract from chainlink that allow us to generate Random Numbers
+
+forge init 
+
+1. After the boiler plate is created we can start to workout in what our functions will do 
+like 
+
+function NumberOne() public {}
+
+function NumberTwo() public {}
+
+function NumberThree() public {}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////!SECTION
+
+In this line here we're going to check the difference between "Require and Revert " 
+require (msg.value >= i_entraceFee, "Raffle: You must pay enough"); -> 161 Gas 
+
+Require -> Spend more gas than normal custon errors 
+
+Revert -> Its more efficient and spend less gas -> 142 Gas 
+
+For good pratices: Is good to add the name of the contract on the name errors like so "error Raffle_NotEnoughEthSent();"
+with Undescore in between , just to make easy to find in the middle os hundress of erros.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////!SECTION
+
+When we use this kind of notation "s_" we shout emit an event
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////!SECTION
+
+Do Your CEI -> Check , Effects and Interactions 
+this the pattern we should follow in our code 
+
+// Test process //!SECTION
+
+// Unit -> Test all the functions from our smartcontract
+// Integration -> Which test Deploy , HelperConfig and Integration scripts
+// Staging Test <- run tests on a mainnet/testnet fork

@@ -64,3 +64,10 @@ $ forge --help
 $ anvil --help
 $ cast --help
 ```
+
+## Tests!
+1. Write some deploy script
+2. write our tests
+    1. Work on a local chain
+    2. Forked Testnet
+    3. Forked Mainnet
